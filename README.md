@@ -17,7 +17,7 @@ And edit it as desired:
 
   > **Warning, this docker image is intended for dev mode** attached to a destroyable Postgres server and npm-install-able project folder. ***Running this in critical/prod environments is strongly discouraged without lots of testing!!!***
 
-Take note of port numbers, DATABASE_URL, SENDGRID_API_KEY, and volume paths. You'll almost definitely have to change the `/path/to/` parts to fit your environment. Download the necessary repos so you have everything.
+Take note of port numbers, DATABASE_URL, SENDGRID_API_KEY, and volume paths. You'll almost definitely have to change the `/path/to/` parts to fit your environment. Download the necessary repos so you have everything. *If you don't have access to the other repos, contact a maintainer. Some are still private.*
 
 Review the `Dockerfile` in each repo so you know what's about to be booted. For example, the working directory, package.json, and CMD (including npm install and fixture-installation commands) lines which by default will affect your environment.
 
