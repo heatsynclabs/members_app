@@ -1,5 +1,7 @@
 # Members App
 
+[![Build Status](https://travis-ci.com/heatsynclabs/api.svg?token=SBSA1SGpDCdD2HrQ2zPH&branch=master)](https://travis-ci.com/heatsynclabs/api)
+
 This is a meta package for running the entire Members DB nodejs app (i.e. all of its microservices together). It's currently made up of:
 
  - `members_api`
