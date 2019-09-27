@@ -1,0 +1,37 @@
+version: "3"
+services:
+  members_api:
+    container_name: members_api
+    build: ../path/to/members_api
+    depends_on:
+      - members_postgres
+    ports:
+      - "3004:3004"
+      - "9229:9229"
+    environment:
+      NODE_PORT: 3004
+      NODE_ENV: "development"
+      SENDGRID_API_KEY: "some big ass sendgrid key"
+      DATABASE_URL: "postgres://postgres:postgres@members_postgres:5432/hsl_dev"
+      JWT_KEY: "some random key"
+    volumes:
+      - /path/to/members_api:/home/app
+
+  members_ui:
+    container_name: members_ui
+    build: ../path/to/members_ui
+    ports:
+      - "3005:3005" # Currently in package.json we only start with PORT=3005
+    environment:
+      NODE_ENV: "development"
+      REACT_APP_MEMBERS_API_URL: "http://localhost:3004" # use what's visible from the host machine
+    volumes:
+      - /path/to/members_ui:/home/app
+
+  postgres:
+    container_name: members_postgres
+    image: postgres:11.2-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: hsl_dev
+
