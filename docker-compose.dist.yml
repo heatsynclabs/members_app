@@ -2,7 +2,7 @@ version: "3"
 services:
   members_api:
     container_name: members_api
-    build: ../path/to/members_api
+    build: ../members_api
     depends_on:
       - members_postgres
     ports:
@@ -19,7 +19,7 @@ services:
 
   members_ui:
     container_name: members_ui
-    build: ../path/to/members_ui
+    build: ../members_ui
     ports:
       - "3005:3005" # Currently in package.json we only start with PORT=3005
     environment:
