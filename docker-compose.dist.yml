@@ -1,3 +1,17 @@
+# Copyright 2019 Iced Development, LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 version: "3"
 services:
   members_api:
@@ -14,8 +28,8 @@ services:
       SENDGRID_API_KEY: "some big ass sendgrid key"
       DATABASE_URL: "postgres://postgres:postgres@members_postgres:5432/hsl_dev"
       JWT_KEY: "some random key"
-    volumes:
-      - /path/to/members_api:/home/app
+    # volumes:
+    #   - ../members_api:/home/app
 
   members_ui:
     container_name: members_ui
@@ -24,9 +38,9 @@ services:
       - "3005:3005" # Currently in package.json we only start with PORT=3005
     environment:
       NODE_ENV: "development"
-      REACT_APP_MEMBERS_API_URL: "http://localhost:3004" # use what's visible from the host machine
-    volumes:
-      - /path/to/members_ui:/home/app
+      REACT_APP_MEMBERS_API_URL: "http://localhost:3004" # use what's visible from the host machine; NO TRAILING SLASH
+    # volumes:
+    #   - ../members_ui:/home/app
 
   members_postgres:
     container_name: members_postgres
