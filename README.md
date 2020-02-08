@@ -2,9 +2,11 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-API: [![Build Status](https://travis-ci.com/heatsynclabs/api.svg?token=SBSA1SGpDCdD2HrQ2zPH&branch=master)](https://travis-ci.com/heatsynclabs/api)
+[![Slack Chat](https://img.shields.io/badge/slack-heatsynclabs-yellow)](http://bit.ly/hslslack)
 
-UI: [![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?token=SBSA1SGpDCdD2HrQ2zPH&branch=master)](https://travis-ci.com/heatsynclabs/members_ui)
+API: [![Build Status](https://travis-ci.com/heatsynclabs/members_api.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_api)
+
+UI: [![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_ui)
 
 This is a meta package for running the entire Members DB nodejs app (i.e. all of its microservices together). It's currently made up of:
 
