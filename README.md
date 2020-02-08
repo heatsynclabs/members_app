@@ -1,12 +1,24 @@
-# Members App
+# Member Management App for Hackerspaces & Makerspaces
 
-[![Build Status](https://travis-ci.com/heatsynclabs/api.svg?token=SBSA1SGpDCdD2HrQ2zPH&branch=master)](https://travis-ci.com/heatsynclabs/api)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+API: [![Build Status](https://travis-ci.com/heatsynclabs/api.svg?token=SBSA1SGpDCdD2HrQ2zPH&branch=master)](https://travis-ci.com/heatsynclabs/api)
+
+UI: [![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?token=SBSA1SGpDCdD2HrQ2zPH&branch=master)](https://travis-ci.com/heatsynclabs/members_ui)
 
 This is a meta package for running the entire Members DB nodejs app (i.e. all of its microservices together). It's currently made up of:
 
- - `members_api`
- - `members_ui`
+ - [members_api](https://github.com/heatsynclabs/api)
+ - [members_ui](https://github.com/heatsynclabs/members_ui)
  - postgres
+
+## Development Roadmap
+
+See https://github.com/orgs/heatsynclabs/projects/1
+
+Generally, to be a complete CRM, Billing, Membership, Certification, Inventory, and Ticketing platform, as well as a community hub and self-governance tool for makerspaces and hackerspaces.
+
+To see a semi-complete list of competing software, visit https://wiki.hackerspaces.org/Hackerspace_Software . There are many softwares like it, but this one is ours.
 
 ## Normal Docker Dev Usage
 
