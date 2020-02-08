@@ -2,21 +2,17 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[![Slack Chat](https://img.shields.io/badge/slack-heatsynclabs-yellow)](http://bit.ly/hslslack)
-
-[![Build Status](https://travis-ci.com/heatsynclabs/members_api.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_api) (API)
-
-[![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_ui) (UI)
+[![Slack Chat](https://img.shields.io/badge/slack-heatsynclabs-red)](http://bit.ly/hslslack)
 
 This is a meta package for running the entire Members DB nodejs app (i.e. all of its microservices together). It's currently made up of:
 
- - [members_api](https://github.com/heatsynclabs/api)
- - [members_ui](https://github.com/heatsynclabs/members_ui)
+ - [members_api](https://github.com/heatsynclabs/api) [![Build Status](https://travis-ci.com/heatsynclabs/members_api.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_api)
+ - [members_ui](https://github.com/heatsynclabs/members_ui) [![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_ui)
  - postgres
 
 ## Development Roadmap
 
-See https://github.com/orgs/heatsynclabs/projects/1
+[![Project Tracker](https://img.shields.io/badge/kanban-github-blueviolet)](https://github.com/orgs/heatsynclabs/projects/1)
 
 Generally, to be a complete CRM, Billing, Membership, Certification, Inventory, and Ticketing platform, as well as a community hub and self-governance tool for makerspaces and hackerspaces.
 
