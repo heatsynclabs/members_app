@@ -4,9 +4,9 @@
 
 [![Slack Chat](https://img.shields.io/badge/slack-heatsynclabs-yellow)](http://bit.ly/hslslack)
 
-API: [![Build Status](https://travis-ci.com/heatsynclabs/members_api.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_api)
+[![Build Status](https://travis-ci.com/heatsynclabs/members_api.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_api) (API)
 
-UI: [![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_ui)
+[![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_ui) (UI)
 
 This is a meta package for running the entire Members DB nodejs app (i.e. all of its microservices together). It's currently made up of:
 
