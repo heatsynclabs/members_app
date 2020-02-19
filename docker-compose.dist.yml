@@ -28,6 +28,7 @@ services:
       SENDGRID_API_KEY: "some big ass sendgrid key"
       DATABASE_URL: "postgres://postgres:postgres@members_postgres:5432/hsl_dev"
       JWT_KEY: "some random key"
+      NPMINSTALL: 0 # set to 1 to run npm install after mounting volume
     # volumes:
     #   - ../members_api:/home/app
 
@@ -35,8 +36,9 @@ services:
     container_name: members_ui
     build: ../members_ui
     ports:
-      - "3005:3005" # Currently in package.json we only start with PORT=3005
+      - "3005:3005"
     environment:
+      PORT: 3005
       NODE_ENV: "development"
       REACT_APP_MEMBERS_API_URL: "http://localhost:3004" # use what's visible from the host machine; NO TRAILING SLASH
     # volumes:

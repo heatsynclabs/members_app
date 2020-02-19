@@ -10,6 +10,11 @@ This is a meta package for running the entire Members DB nodejs app (i.e. all of
  - [members_ui](https://github.com/heatsynclabs/members_ui) [![Build Status](https://travis-ci.com/heatsynclabs/members_ui.svg?branch=master)](https://travis-ci.com/heatsynclabs/members_ui)
  - postgres
 
+## Staging Environment
+
+ - UI: https://hsl-members-ui-staging.herokuapp.com
+ - API: https://hsl-members-api-staging.herokuapp.com
+
 ## Development Roadmap
 
 [![Project Tracker](https://img.shields.io/badge/kanban-github-blueviolet)](https://github.com/orgs/heatsynclabs/projects/1)
